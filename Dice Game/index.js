@@ -1,20 +1,36 @@
-// alert("hello");
-let randomNumber1 =Math.floor(Math.random()*6)+1;
+// // 1.alert("hello");
+// // 2.create a random number from 1-6
+// // 3.change imageName  by concatinating  the number dice+randomNumber1+.png
+// // 4.add path inside folder to it  
+// now select the img 1 element
+// update the path 
 
-let randomDiceImage="dice"+randomNumber1+".png";
+// -----------------------------------------------------------------------
+// first 
+// let randomNumber1 =Math.floor(Math.random()*6)+1;
+// let randomDiceImage="dice"+randomNumber1+".png";
+// let randomImageSource="images/"+randomDiceImage;
+// document.querySelectorAll("img")[0]
+// let image1=document.querySelectorAll("img")[0];
+// image1.setAttribute("src",randomImageSource);
 
-let randomImageSource="images/"+randomDiceImage;
-
-let image1=document.querySelectorAll("img")[0];
-
-image1.setAttribute("src",randomImageSource);
-
-let randomNumber2 =Math.floor(Math.random()*6)+1;
-
-let randomImageSource2="images/dice"+randomNumber2+".png";
+// -------------------------------------------------------------------------
+// do three line code in one line  extra 
 
 
-document.querySelectorAll("img")[1].setAttribute("src",randomImageSource2);
+// -------------------------------------------------------------------------
+// let randomNumber2 =Math.floor(Math.random()*6)+1;
+
+// let randomImageSource2="images/dice"+randomNumber2+".png";
+
+
+// document.querySelectorAll("img")[1].setAttribute("src",randomImageSource2);
+// -------------------------------------------------------------------------------------
+let randomNumber1=Math.floor(Math.random() * 6)+1;
+let randomNumber2=Math.floor(Math.random() * 6)+1;
+let randomImageSource="images/"+"dice"+(Math.floor(Math.random() *6)+1)+".png"
+document.querySelectorAll("img")[0].setAttribute("src","images/"+"dice"+randomNumber1+".png")
+document.querySelectorAll("img")[1].setAttribute("src","images/"+"dice"+randomNumber2+".png")
 
 // if player 1 wins
 
