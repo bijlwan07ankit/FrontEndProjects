@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    
   }
   html,
   body {
@@ -174,4 +175,17 @@
       position: fixed;
     }
   }
-  
+
+  .col img{
+    height:50vh;
+    width:20vw;
+    padding:1rem;
+  }
+  .col img:hover{
+    overflow: hidden;
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+  .row{
+    display:flex;
+  }
